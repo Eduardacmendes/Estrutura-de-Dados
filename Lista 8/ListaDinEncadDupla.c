@@ -238,8 +238,7 @@ int lista_consistente(Lista* li){
       tamanho_lista so anda por prox, entao conta 2 (certo).
       lista_consistente confere 33->prox->ant == 33 e isso da falso
       (16->ant nao e o 33), entao devolve 0.
-   c) versao corrigida abaixo. A biblioteca ja tem remove_lista certa,
-      por isso o nome diferente aqui. */
+   c) versao corrigida */
 int remove_lista_corrigida(Lista* li, int mat){
     if(li == NULL) return 0;
     if(*li == NULL) return 0;
